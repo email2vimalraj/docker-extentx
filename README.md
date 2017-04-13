@@ -8,7 +8,7 @@ This repository contains **Dockerfile** of [ExtentX](https://github.com/anshooar
 ## Usage
 ### Run Mongo server
 ```bash
-docker run -d --name extent-mongo mongo
+docker run -p 27017:27017 -d --name extent-mongo mongo
 ```
 
 ### Run ExtentX
