@@ -1,0 +1,13 @@
+extentx:
+  image: 
+  links:
+    - mongo:mongo
+  ports:
+    - 
+    
+mongo:
+  image: 
+  ports: 
+    - 
+  volumes:
+    - /var/lib/mysql
