@@ -1,13 +1,13 @@
 extentx:
-  image: 
+  build: .
+  environment:
+    - MONGODB_PORT_27017_TCP_ADDR=mongo 
   links:
     - mongo:mongo
   ports:
-    - 
+    - 1337:1337
     
 mongo:
-  image: 
+  image: mongo
   ports: 
-    - 
-  volumes:
-    - /var/lib/mysql
+    - 27017:27017
